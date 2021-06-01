@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?80819a7b6c80d39c089dc6b8529c8c2e") format("truetype"),
+url("./flaticon.woff?80819a7b6c80d39c089dc6b8529c8c2e") format("woff"),
+url("./flaticon.woff2?80819a7b6c80d39c089dc6b8529c8c2e") format("woff2"),
+url("./flaticon.eot?80819a7b6c80d39c089dc6b8529c8c2e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?80819a7b6c80d39c089dc6b8529c8c2e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "torrent-symbol-file-format": "\f101",
+    "calculator": "\f102",
+    "food": "\f103",
+    "microprocessor": "\f104",
+);
+
+.flaticon-torrent-symbol-file-format:before {
+    content: map-get($flaticon-map, "torrent-symbol-file-format");
+}
+.flaticon-calculator:before {
+    content: map-get($flaticon-map, "calculator");
+}
+.flaticon-food:before {
+    content: map-get($flaticon-map, "food");
+}
+.flaticon-microprocessor:before {
+    content: map-get($flaticon-map, "microprocessor");
+}
